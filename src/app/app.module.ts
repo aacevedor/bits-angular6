@@ -12,8 +12,18 @@ import { SharedModule } from '@app/shared';
 import { HomeModule } from './home/home.module';
 import { AboutModule } from './about/about.module';
 import { LoginModule } from './login/login.module';
+import { ReleaseModule } from './release/release.module';
+import { ArtistModule } from './artist/artist.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+
+import { Globals } from './globals';
+
+
+
+
+
+
 
 @NgModule({
   imports: [
@@ -28,10 +38,13 @@ import { AppRoutingModule } from './app-routing.module';
     HomeModule,
     AboutModule,
     LoginModule,
+    ReleaseModule,
+    ArtistModule,
     AppRoutingModule
   ],
   declarations: [AppComponent],
   providers: [
+    Globals
   ],
   bootstrap: [AppComponent]
 })

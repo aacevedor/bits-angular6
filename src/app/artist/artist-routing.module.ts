@@ -1,18 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
 import { Route, extract } from '@app/core';
-import { AboutComponent } from './about.component';
+
+import { ArtistComponent } from './artist.component';
 
 const routes: Routes = [
   Route.withShell([
-    { path: 'about', component: AboutComponent, data: { title: extract('About') } }
+    { path: 'artist/:id', component: ArtistComponent, data: { title: extract('Artist') } }
   ])
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
-  providers: []
+  exports: [RouterModule]
 })
-export class AboutRoutingModule { } 
+export class ArtistRoutingModule { }

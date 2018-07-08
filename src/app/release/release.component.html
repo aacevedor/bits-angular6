@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <div class="jumbotron text-center">
+    <h1>New Release</h1>
+    <!-- <app-loader [isLoading]="isLoading"></app-loader> -->
+    <!-- <q [hidden]="isLoading">{{quote}}</q> -->
+  </div>
+  <div class="container">
+
+      <div class="row">
+      <div class="card col-4" style="width: 18rem;" *ngFor="let item of albums?.items">
+        <img class="card-img-top" src={{item.images[1].url}} alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">{{item.name}} ({{item.album_type}})</h4>
+          <span>Release date: {{ item.release_date }}</span>
+          <h6>Related Artits:</h6>
+          <ul>
+            <li *ngFor="let artist of item.artists">
+                <span>{{ artist.name }} </span>
+                <a [routerLink]="['/artist',artist.id]" > Show </a>
+            </li>
+          </ul>
+          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
