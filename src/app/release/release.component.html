@@ -16,11 +16,11 @@
           <ul>
             <li *ngFor="let artist of item.artists">
                 <span>{{ artist.name }} </span>
-                <a [routerLink]="['/artist',artist.id]" > Show </a>
+                <a [routerLink]="['/artist',artist.id]" > <a href="#" class="">Show Details</a></a>
             </li>
           </ul>
           <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+
         </div>
       </div>
     </div>
