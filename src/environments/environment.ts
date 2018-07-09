@@ -17,7 +17,7 @@ export const environment = {
   ],
   client_id : '366426de773243b6b429568267c85c3c',
   response_type : 'token',
-  redirect_uri : 'http://bitsangular.afar.systems/releases',
+  redirect_uri : 'http%3A%2F%2Flocalhost:4200%2Fhome',
   scope : 'user-read-private%20user-read-email',
   state : '123',
 };
