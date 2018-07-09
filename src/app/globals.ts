@@ -1,14 +1,15 @@
 import { Injectable } from '@angular/core';
+import { environment } from '../environments/environment';
 
 @Injectable()
 export class Globals {
   authorization: string = null;
   authentication_params = {
-    'client_id' : '366426de773243b6b429568267c85c3c',
-    'response_type' : 'token',
-    'redirect_uri' : 'http%3A%2F%2Flocalhost:4200%2Fhome',
-    'scope' : 'user-read-private%20user-read-email',
-    'state' : '123',
+    'client_id' : environment.client_id,
+    'response_type' : environment.response_type,
+    'redirect_uri' : environment.redirect_uri,
+    'scope' : environment.scope,
+    'state' : environment.state,
   }
 
 

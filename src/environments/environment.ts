@@ -14,5 +14,10 @@ export const environment = {
   supportedLanguages: [
     'en-US',
     'fr-FR'
-  ]
+  ],
+  client_id : '366426de773243b6b429568267c85c3c',
+  response_type : 'token',
+  redirect_uri : 'http://bitsangular.afar.systems/releases',
+  scope : 'user-read-private%20user-read-email',
+  state : '123',
 };
